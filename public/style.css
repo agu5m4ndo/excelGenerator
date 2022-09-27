@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "nova";
+    src: url(./font/FontsFree-Net-proxima_nova_reg-webfont.ttf);
+}
+
+.main-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content {
+    margin: 50px;
+    padding: 40px;
+    border: solid 7px #1D6F42;
+    border-right: none;
+    border-radius: 30px;
+}
+
+.content h1 {
+    max-width: 500px;
+    font-size: 60px;
+    margin-right: 40px;
+    font-family: "nova";
+    color: #252525;
+    margin-bottom: 40px;
+}
+
+.content input[type=number] {
+    font-family: "nova";
+    border: none;
+    outline: none;
+    border-bottom: solid 5px #252525;
+    font-size: 30px;
+    padding: 7px;
+    border-radius: 10px;
+    transition: border 0.4s, background 0.4s;
+    margin-bottom: 20px;
+}
+
+.content input[type=number]:hover {
+    border-bottom: solid 5px #1D6F42;
+    background-color: #ccc;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0;
+}
+
+
+/* button */
+
+.content button {
+    font-size: 20px;
+    font-family: "nova";
+    transition: border 0.3s;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s, border 0.4s;
+}
+
+.content button:hover {
+    background-color: #ccc;
+}
+
+
+/* squares  */
+
+.squares {
+    display: flex;
+    transform: translateX(-140px);
+}
+
+.square {
+    margin: 11px 7px;
+    height: 40px;
+    width: 75px;
+    background-color: #1D6F42;
+}
+
+
+/* credit */
+
+.credits {
+    margin: 50px;
+    /* transform: translateY(200px); */
+    position: fixed;
+    bottom: 0px;
+}
+
+.credits h2 {
+    font-family: "nova";
+    font-size: 35px;
+}
+
+
+/* info (aún no) */
+
+
+/* .info {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.info button {
+    font-size: 45px;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-family: "nova";
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.info button:hover {
+    background-color: #ccc;
+}
+
+.text-info {
+    font-family: "nova";
+    font-size: 25px;
+} */
