@@ -7,6 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'))
 app.use('/', router)
 
-app.listen(8080, () => {
-    console.log('Server listening to port 8080')
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log(`Server listening on port ${port}`)
 })
